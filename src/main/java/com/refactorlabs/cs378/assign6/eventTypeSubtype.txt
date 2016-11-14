@@ -1,0 +1,56 @@
+CHANGE
+change contact form type	CONTACT_FORM_TYPE
+
+CLICK
+click alternative	ALTERNATIVE
+click contact banner	CONTACT_BANNER
+click contact button	CONTACT_BUTTON
+click dealer phone	DEALER_PHONE
+click features section	FEATURES_SECTION
+click get directions	GET_DIRECTIONS
+click vehicle history report link	VEHICLE_HISTORY
+click_on_alternative	ALTERNATIVE
+
+
+CONTACT_FORM_STATUS
+contact form error	ERROR
+contact form success	SUCCESS
+
+DISPLAY
+alternatives_displayed	ALTERNATIVES
+display_ilmr_report_listing	ILMR_REPORT_LISTING
+
+EDIT
+edit contact form	CONTACT_FORM
+
+ILMR_STATUS
+error_loading_ilmr	LOAD_ERROR
+
+ILMR_CPO
+ilmr_cpo_financing	FINANCING
+ilmr_cpo_inspection	INSPECTION
+ilmr_cpo_roadside	ROADSIDE
+ilmr_cpo_sirius	SIRIUS
+ilmr_cpo_warranty	WARRANTY
+ilmr_see_more_cpo	SEE_MORE
+
+PLAY
+play_video_ilmr	ILMR_VIDEO
+
+PRINT
+print_ilmr	ILMR
+
+SHOW
+show badge detail	BADGE_DETAIL
+show photo modal	PHOTO_MODAL
+
+SUBMIT
+submit contact form	CONTACT_FORM
+
+VISIT
+visit alternatives	ALTERNATIVES
+visit badges	BADGES
+visit contact form	CONTACT_FORM
+visit features	FEATURES
+visit vehicle history	VEHICLE_HISTORY
+visit_market_report_listing	MARKET_REPORT_LISTING

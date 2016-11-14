@@ -1,0 +1,102 @@
+{"namespace": "com.refactorlabs.cs378.assign7",
+ "type": "record",
+ "name": "Session",
+ "fields": [
+      {"name": "user_id", "type": "string"},
+      {"name": "events",
+       "type": {"type": "array",
+                "items": {"type": "record",
+                          "name": "Event",
+                          "fields": [
+                              {"name": "event_type",
+                               "type": {"type": "enum",
+                                        "name": "EventType",
+                                        "symbols": [ "CHANGE", "CLICK", "CONTACT_FORM_STATUS", "DISPLAY",
+                                                     "EDIT", "ILMR_STATUS", "ILMR_CPO", "PLAY", "PRINT",
+						     "SHOW", "SUBMIT", "VISIT" ]
+                                       }
+                               },
+                              {"name": "event_subtype",
+                               "type": {"type": "enum", "name": "EventSubtype",
+                                        "symbols": [ "CONTACT_FORM_TYPE",
+                                        "ALTERNATIVE",
+                                        "CONTACT_BANNER",
+                                        "CONTACT_BUTTON",
+                                        "DEALER_PHONE",
+                                        "FEATURES_SECTION",
+                                        "GET_DIRECTIONS",
+                                        "VEHICLE_HISTORY",
+                                        "ERROR",
+                                        "SUCCESS",
+                                        "ALTERNATIVES",
+                                        "ILMR_REPORT_LISTING",
+                                        "CONTACT_FORM",
+                                        "LOAD_ERROR",
+                                        "FINANCING",
+                                        "INSPECTION",
+                                        "ROADSIDE",
+                                        "SIRIUS",
+                                        "WARRANTY",
+                                        "SEE_MORE",
+                                        "ILMR_VIDEO",
+                                        "ILMR",
+                                        "BADGE_DETAIL",
+                                        "PHOTO_MODAL",
+                                        "BADGES",
+                                        "FEATURES",
+                                        "MARKET_REPORT_LISTING" ]
+                                       }
+                              },
+                              {"name": "event_time", "type": ["null", "string"], "default": null },
+                              {"name": "page", "type": ["null", "string"], "default": null },
+                              {"name": "referrer", "type": ["null", "string"], "default": null },
+                              {"name": "referring_domain", "type": ["null", "string"], "default": null },
+                              {"name": "city", "type": ["null", "string"], "default": null },
+                              {"name": "region", "type": ["null", "string"], "default": null },
+                              {"name": "vin", "type": ["null", "string"], "default": null },
+                              {"name": "condition", 
+                               "type": ["null", {"type":"enum", "name":"VehicleCondition",
+                                        "symbols": [
+                                          "CPO", "Used"
+                                        ]}], "default": null },
+                              {"name": "year", "type": "int" },
+                              {"name": "make", "type": ["null", "string"], "default": null },
+                              {"name": "model", "type": ["null", "string"], "default": null },
+                              {"name": "trim", "type": ["null", "string"], "default": null },
+                              {"name": "body_style", 
+                               "type": ["null", {"type":"enum", "name": "BodyStyle",
+                                        "symbols": [
+                                          "Coupe", "Hatchback", "Minivan", "Pickup", "SUV", "Sedan"
+                                        ]}], "default": null },
+                              {"name": "subtrim", "type": ["null", "string"], "default": null },
+                              {"name": "cab_style",
+                               "type": ["null", {"type":"enum", "name":"CabStyle",
+                                        "symbols": [
+                                          "CREW_CAB", "REGULAR_CAB"
+                                        ]}], "default": null },
+                              {"name": "price", "type":"double" },
+                              {"name": "mileage", "type": "int" },
+                              {"name": "mpg", "type": "int" },
+                              {"name": "exterior_color", "type": ["null", "string"], "default": null },
+                              {"name": "interior_color", "type": ["null", "string"], "default": null },
+                              {"name": "engine_displacement", "type": ["null", "string"], "default": null },
+                              {"name": "engine", "type": ["null", "string"], "default": null },
+                              {"name": "transmission", "type": ["null", "string"], "default": null },
+                              {"name": "drive_type", "type": ["null", "string"], "default": null },
+                              {"name": "fuel", "type": ["null", "string"], "default": null },
+                              {"name": "image_count", "type": "int" },
+                              {"name": "free_carfax_report", "type": "boolean" },
+                              {"name": "carfax_one_owner", "type": "boolean" },
+                              {"name": "cpo", "type": "boolean" },
+                              {"name": "features", 
+                               "type": ["null", {"type": "array",
+                                        "items":{"type": "string", "name":"Feature"}
+                                        }], "default": null
+                              }
+                            ]
+                          }
+                }
+       }  
+   ]
+ }
+
